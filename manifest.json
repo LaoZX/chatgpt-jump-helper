@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Q&A Navigator",
+  "version": "1.2",
+  "description": "标记 ChatGPT/Gemini/Claude/DeepSeek 的用户提问并提供跳转功能。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*",
+        "https://chat.deepseek.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["storage"]
+}
