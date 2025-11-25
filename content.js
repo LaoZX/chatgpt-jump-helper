@@ -64,10 +64,8 @@ const USER_SELECTORS = {
         "[data-test-render-count]"
     ],
     "deepseek": [
-        ".ds-message--user",
-        "div[data-role='user']",
-        ".message-user"
-    ]
+    ".ds-message.d29f3d7d"
+]
 };
 
 let platform = detectPlatform();
